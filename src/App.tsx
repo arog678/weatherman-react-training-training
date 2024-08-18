@@ -10,7 +10,7 @@ import NavigateSetter from './modules/navigation/components/NavigateSetter'
 
 const App = (): JSX.Element => (
 	<Provider store={store}>
-		<BrowserRouter>
+		<BrowserRouter basename='/weatherman-react-training-training/'>
 			<NavigateSetter />
 			<LazySwitch>
 				<Route path={Paths.HOME} element={<Routes.Search />} />
