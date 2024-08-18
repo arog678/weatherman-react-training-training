@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { FetchForecastResponse } from '../../api/types'
 import { RootStoreState } from '../../root'
 import ForecastRow from './ForecastRow'
+import '../styles/ForecastComponent.scss'
 
 const ForecastComponent = (): JSX.Element => {
 
@@ -20,12 +21,12 @@ const ForecastComponent = (): JSX.Element => {
 	} 
 
 	return <div>
-		<h3>Forecast:</h3>
+		<h4 className='forecastHeader'>Forecast:</h4>
 		{forecast.list.map(fc => 
 			<ForecastRow 
 				key={ fc.dt } 
-				day={ fc.dt_txt + ' °C' } 
-				temp={ fc.main.temp } 
+				day={ fc.dt_txt} 
+				temp={ fc.main.temp + ' °C' } 
 				weatherDescription={ fc.weather[0].description } 
 			/>
 		)}

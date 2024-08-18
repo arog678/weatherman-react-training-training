@@ -3,7 +3,7 @@ import '../styles/ForecastRow.scss'
 
 interface ForecastRowProps {
 	day: string;
-	temp: number;
+	temp: string;
 	weatherDescription: string;
 }
 

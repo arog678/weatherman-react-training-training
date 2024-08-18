@@ -12,8 +12,8 @@ const CurrentTemperatureItem = ({
 }: CurrentTemperatureItemProps): JSX.Element => {
 
 	return <span className='currentTempBox'>
-		<h3>{heading}</h3>
-		<label>{label}</label>
+		<h4 className='currentTempHeading'>{heading}</h4>
+		<label className='currentTempLabel'>{label}</label>
 	</span>
 }
 

@@ -13,7 +13,7 @@ const CurrentTemperature = ({
 
 	return (
 		<div>
-			<h1>{location.main.temp}</h1>
+			<h4 className="temperatureDisplay">{location.main.temp}</h4>
 			<div className='currentWeatherDetails'>
 				<CurrentTemperatureItem 
 					heading={'Temp min'}

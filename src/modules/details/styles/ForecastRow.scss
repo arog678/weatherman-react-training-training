@@ -1,11 +1,14 @@
 .rowContainer {
 	display: flex;
+	font-size: 15px;
+	margin-left: 2px;
+	margin-bottom: 0.03em;
 }
 
 .rowLabelDay{
-	flex-basis: 75px;
+	flex-basis: 100px;
 }
 
 .rowLabelTemp{
-	flex-basis: 100px;
+	flex-basis: 185px;
 }

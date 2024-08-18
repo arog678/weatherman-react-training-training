@@ -1,3 +1,15 @@
 .currentTempBox {
-	display: inline;
+	display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.currentTempHeading {
+	margin: 0;
+	letter-spacing: -0.03em;
+	font-size: 15px;
+}
+
+.currentTempLabel {
+	font-size: 15px;
 }

@@ -44,8 +44,8 @@ const DetailsScreen = (): JSX.Element | null => {
 
 	return (
 		<div className='details'>
-			<h2>Weather Details:</h2>
-			<h3>{location.name}, {location.sys.country}</h3>			
+			<h2 className="weatherHeading">Weather Details:</h2>
+			<h3 className="weathSubHeading">{location.name}, {location.sys.country}</h3>			
 
 			<CurrentTemperature location={location}/>
 			<ForecastComponent />

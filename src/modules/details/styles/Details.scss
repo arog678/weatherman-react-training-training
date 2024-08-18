@@ -1,8 +1,23 @@
 .details {
-    padding: 20px;
+    padding: 6px;
 
     h2 {
         color: blue
     }
 
+}
+
+.weatherHeading {
+    color: blue;
+    letter-spacing: -0.02em;
+    font-size: 21px;
+}
+
+.weathSubHeading {
+    font-size: 16px;
+}
+
+.temperatureDisplay {
+    margin-top: 14px;
+    margin-bottom: 15px;
 }
