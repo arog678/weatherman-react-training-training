@@ -1,6 +1,7 @@
 {
 	"name": "weatherman-react-training",
 	"version": "0.1.0",
+	"homepage": "https://arog678.github.io/weatherman-react-training-training",
 	"private": true,
 	"dependencies": {
 		"@types/node": "^12.0.0",
@@ -25,14 +26,15 @@
 		"web-vitals": "^0.2.4"
 	},
 	"scripts": {
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"lint": "eslint . --ext .js,.jsx,.ts,.tsx --quiet --fix",
-		"watch": "tsc -w",
-		"predeploy": "yarn run build",
-		"deploy": "gh-pages -d build"	
+		"watch": "tsc -w"
+	
 	},
 	"eslintConfig": {
 		"extends": [
